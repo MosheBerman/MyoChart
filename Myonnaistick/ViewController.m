@@ -77,6 +77,16 @@ typedef NS_ENUM(NSInteger, MAYOEventType) {
     [super viewDidLoad];
 
     /**
+     *
+     */
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor darkGrayColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+
+    self.title = @"MyoGraph";
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    
+    /**
      *  Grab all the chart views...
      */
     
