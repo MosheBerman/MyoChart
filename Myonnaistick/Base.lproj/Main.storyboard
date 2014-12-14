@@ -32,31 +32,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-3v-HvW" customClass="JBChartView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-3v-HvW" userLabel="Gyroscope Chart" customClass="JBLineChartView">
                                 <rect key="frame" x="15" y="90" width="570" height="130"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-Yi-Tkq" customClass="JBChartView">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gyroscope" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hze-OI-grt">
+                                <rect key="frame" x="23" y="186" width="124" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="k4l-jg-jZ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-Yi-Tkq" userLabel="Accelerometer Chart" customClass="JBLineChartView">
                                 <rect key="frame" x="15" y="235" width="570" height="130"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X61-Ae-eWe" customClass="JBChartView">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accelerometer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKj-gP-hbP" userLabel="Accelerometer">
+                                <rect key="frame" x="23" y="331" width="126" height="26"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X61-Ae-eWe" userLabel="Orientation Chart" customClass="JBLineChartView">
                                 <rect key="frame" x="15" y="380" width="570" height="130"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orientation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8M-Sk-ucK">
+                                <rect key="frame" x="23" y="476" width="98" height="26"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-9O-spc" userLabel="Legend">
+                                <rect key="frame" x="15" y="525" width="283" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green is Y" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSi-8c-raA">
+                                        <rect key="frame" x="101" y="20" width="80" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue is Z" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3k-6x-wMf">
+                                        <rect key="frame" x="196" y="20" width="67" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red is X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8J-wa-PQ2">
+                                        <rect key="frame" x="20" y="20" width="64" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="TUI-dR-vrx"/>
+                                    <constraint firstAttribute="height" constant="61" id="w88-kx-97B"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="tmb-3v-HvW" firstAttribute="leading" secondItem="Hze-OI-grt" secondAttribute="leading" constant="-8" id="16O-BI-iHw"/>
                             <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="centerX" secondItem="tmb-3v-HvW" secondAttribute="centerX" id="1la-SM-307"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Od5-9O-spc" secondAttribute="bottom" constant="14" id="4gJ-Uf-7kE"/>
+                            <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="bottom" secondItem="aKj-gP-hbP" secondAttribute="bottom" constant="8" id="5C1-Ho-iRA"/>
                             <constraint firstItem="X61-Ae-eWe" firstAttribute="width" secondItem="Ig4-Yi-Tkq" secondAttribute="width" id="8tW-Z5-Phb"/>
                             <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="top" secondItem="tmb-3v-HvW" secondAttribute="bottom" constant="15" id="ICM-lj-gMB"/>
                             <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="width" secondItem="tmb-3v-HvW" secondAttribute="width" id="K3j-9M-C94"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X61-Ae-eWe" secondAttribute="bottom" constant="90" id="K8w-Ms-Gnz"/>
+                            <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="leading" secondItem="aKj-gP-hbP" secondAttribute="leading" constant="-8" id="MKv-wG-fic"/>
+                            <constraint firstItem="Od5-9O-spc" firstAttribute="top" secondItem="X61-Ae-eWe" secondAttribute="bottom" constant="15" id="R8O-vC-0IE"/>
+                            <constraint firstItem="tmb-3v-HvW" firstAttribute="bottom" secondItem="Hze-OI-grt" secondAttribute="bottom" constant="8" id="Tnh-i8-Gdq"/>
+                            <constraint firstItem="Od5-9O-spc" firstAttribute="leading" secondItem="X61-Ae-eWe" secondAttribute="leading" id="Vab-rW-zCt"/>
                             <constraint firstItem="X61-Ae-eWe" firstAttribute="width" secondItem="Ig4-Yi-Tkq" secondAttribute="width" id="XoD-wq-bp0"/>
+                            <constraint firstItem="P8M-Sk-ucK" firstAttribute="leading" secondItem="X61-Ae-eWe" secondAttribute="leading" constant="8" id="bsL-JQ-4qt"/>
                             <constraint firstItem="X61-Ae-eWe" firstAttribute="height" secondItem="Ig4-Yi-Tkq" secondAttribute="height" id="c56-8h-WjR"/>
                             <constraint firstItem="X61-Ae-eWe" firstAttribute="centerX" secondItem="Ig4-Yi-Tkq" secondAttribute="centerX" id="dKZ-NW-yKC"/>
                             <constraint firstAttribute="width" secondItem="tmb-3v-HvW" secondAttribute="width" constant="30" id="eib-mh-e18"/>
                             <constraint firstItem="tmb-3v-HvW" firstAttribute="height" secondItem="Ig4-Yi-Tkq" secondAttribute="height" id="j4A-PY-0uB"/>
+                            <constraint firstItem="P8M-Sk-ucK" firstAttribute="bottom" secondItem="X61-Ae-eWe" secondAttribute="bottom" constant="-8" id="oDK-FH-ngd"/>
                             <constraint firstItem="X61-Ae-eWe" firstAttribute="top" secondItem="Ig4-Yi-Tkq" secondAttribute="bottom" constant="15" id="p2v-IG-Jbl"/>
                             <constraint firstItem="tmb-3v-HvW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="xVp-aC-P6q"/>
                             <constraint firstAttribute="centerX" secondItem="tmb-3v-HvW" secondAttribute="centerX" id="xcq-nE-KT2"/>
@@ -64,15 +122,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="f0s-WI-75e">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="YIP-Wl-Do8">
-                            <rect key="frame" x="140" y="7" width="305" height="31"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="Orientation"/>
-                                <segment title="Gyro"/>
-                                <segment title="Accelerometer"/>
-                            </segments>
-                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="eJZ-2x-Lsn">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mti-Zn-OXD">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
@@ -87,12 +136,18 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="eventPicker" destination="YIP-Wl-Do8" id="ppE-rQ-M7D"/>
+                        <outlet property="accelChartView" destination="Ig4-Yi-Tkq" id="vgR-PI-lGd"/>
+                        <outlet property="gyroChartView" destination="tmb-3v-HvW" id="3oJ-Nn-3uA"/>
+                        <outlet property="legend" destination="Od5-9O-spc" id="flQ-Lw-R4v"/>
+                        <outlet property="orientationChartView" destination="X61-Ae-eWe" id="K0s-Qp-8d8"/>
+                        <outletCollection property="graphNames" destination="P8M-Sk-ucK" id="iC6-9W-KkP"/>
+                        <outletCollection property="graphNames" destination="aKj-gP-hbP" id="y34-DC-9QH"/>
+                        <outletCollection property="graphNames" destination="Hze-OI-grt" id="qgh-5g-Us4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="195"/>
+            <point key="canvasLocation" x="277" y="195"/>
         </scene>
     </scenes>
 </document>
