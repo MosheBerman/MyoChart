@@ -14,6 +14,12 @@
 		4675274E1A3D6D72001BB407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4675274D1A3D6D72001BB407 /* Images.xcassets */; };
 		467527511A3D6D72001BB407 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4675274F1A3D6D72001BB407 /* LaunchScreen.xib */; };
 		4675275D1A3D6D72001BB407 /* MyonnaistickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4675275C1A3D6D72001BB407 /* MyonnaistickTests.m */; };
+		467527681A3D6FF6001BB407 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467527671A3D6FF6001BB407 /* MyoKit.framework */; };
+		4675276A1A3D7000001BB407 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467527691A3D7000001BB407 /* CoreBluetooth.framework */; };
+		4675276C1A3D7007001BB407 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4675276B1A3D7007001BB407 /* SystemConfiguration.framework */; };
+		46B901181A3DA1A7002A97EF /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B901131A3DA1A7002A97EF /* JBBarChartView.m */; };
+		46B901191A3DA1A7002A97EF /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B901151A3DA1A7002A97EF /* JBChartView.m */; };
+		46B9011A1A3DA1A7002A97EF /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B901171A3DA1A7002A97EF /* JBLineChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,15 @@
 		467527561A3D6D72001BB407 /* MyonnaistickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyonnaistickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4675275B1A3D6D72001BB407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4675275C1A3D6D72001BB407 /* MyonnaistickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyonnaistickTests.m; sourceTree = "<group>"; };
+		467527671A3D6FF6001BB407 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyoKit.framework; path = Myonnaistick/Myo/MyoKit.framework; sourceTree = "<group>"; };
+		467527691A3D7000001BB407 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4675276B1A3D7007001BB407 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		46B901121A3DA1A7002A97EF /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		46B901131A3DA1A7002A97EF /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		46B901141A3DA1A7002A97EF /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		46B901151A3DA1A7002A97EF /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		46B901161A3DA1A7002A97EF /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		46B901171A3DA1A7002A97EF /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467527681A3D6FF6001BB407 /* MyoKit.framework in Frameworks */,
+				4675276C1A3D7007001BB407 /* SystemConfiguration.framework in Frameworks */,
+				4675276A1A3D7000001BB407 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,9 @@
 		467527341A3D6D72001BB407 = {
 			isa = PBXGroup;
 			children = (
+				467527671A3D6FF6001BB407 /* MyoKit.framework */,
+				4675276B1A3D7007001BB407 /* SystemConfiguration.framework */,
+				467527691A3D7000001BB407 /* CoreBluetooth.framework */,
 				4675273F1A3D6D72001BB407 /* Myonnaistick */,
 				467527591A3D6D72001BB407 /* MyonnaistickTests */,
 				4675273E1A3D6D72001BB407 /* Products */,
@@ -81,6 +102,7 @@
 		4675273F1A3D6D72001BB407 /* Myonnaistick */ = {
 			isa = PBXGroup;
 			children = (
+				46B901111A3DA1A7002A97EF /* Classes */,
 				467527441A3D6D72001BB407 /* AppDelegate.h */,
 				467527451A3D6D72001BB407 /* AppDelegate.m */,
 				467527471A3D6D72001BB407 /* ViewController.h */,
@@ -119,6 +141,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		46B901111A3DA1A7002A97EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				46B901121A3DA1A7002A97EF /* JBBarChartView.h */,
+				46B901131A3DA1A7002A97EF /* JBBarChartView.m */,
+				46B901141A3DA1A7002A97EF /* JBChartView.h */,
+				46B901151A3DA1A7002A97EF /* JBChartView.m */,
+				46B901161A3DA1A7002A97EF /* JBLineChartView.h */,
+				46B901171A3DA1A7002A97EF /* JBLineChartView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +164,7 @@
 				467527391A3D6D72001BB407 /* Sources */,
 				4675273A1A3D6D72001BB407 /* Frameworks */,
 				4675273B1A3D6D72001BB407 /* Resources */,
+				467527661A3D6DBD001BB407 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,13 +250,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		467527661A3D6DBD001BB407 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Auto Increment Version Script\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		467527391A3D6D72001BB407 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				467527491A3D6D72001BB407 /* ViewController.m in Sources */,
+				46B9011A1A3DA1A7002A97EF /* JBLineChartView.m in Sources */,
+				46B901181A3DA1A7002A97EF /* JBBarChartView.m in Sources */,
 				467527461A3D6D72001BB407 /* AppDelegate.m in Sources */,
+				46B901191A3DA1A7002A97EF /* JBChartView.m in Sources */,
 				467527431A3D6D72001BB407 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Myonnaistick/Myo",
+				);
 				INFOPLIST_FILE = Myonnaistick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +414,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Myonnaistick/Myo",
+				);
 				INFOPLIST_FILE = Myonnaistick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +477,7 @@
 				467527621A3D6D72001BB407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		467527631A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "MyonnaistickTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +486,7 @@
 				467527651A3D6D72001BB407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
