@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CQt-3K-fdB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="acx-F5-NsX">
+            <objects>
+                <navigationController id="CQt-3K-fdB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DTQ-KA-hNv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dVE-jP-L9y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llz-Lv-xVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="195"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +31,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-3v-HvW" customClass="JBChartView">
+                                <rect key="frame" x="15" y="90" width="570" height="130"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-Yi-Tkq" customClass="JBChartView">
+                                <rect key="frame" x="15" y="235" width="570" height="130"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X61-Ae-eWe" customClass="JBChartView">
+                                <rect key="frame" x="15" y="380" width="570" height="130"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="centerX" secondItem="tmb-3v-HvW" secondAttribute="centerX" id="1la-SM-307"/>
+                            <constraint firstItem="X61-Ae-eWe" firstAttribute="width" secondItem="Ig4-Yi-Tkq" secondAttribute="width" id="8tW-Z5-Phb"/>
+                            <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="top" secondItem="tmb-3v-HvW" secondAttribute="bottom" constant="15" id="ICM-lj-gMB"/>
+                            <constraint firstItem="Ig4-Yi-Tkq" firstAttribute="width" secondItem="tmb-3v-HvW" secondAttribute="width" id="K3j-9M-C94"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X61-Ae-eWe" secondAttribute="bottom" constant="90" id="K8w-Ms-Gnz"/>
+                            <constraint firstItem="X61-Ae-eWe" firstAttribute="width" secondItem="Ig4-Yi-Tkq" secondAttribute="width" id="XoD-wq-bp0"/>
+                            <constraint firstItem="X61-Ae-eWe" firstAttribute="height" secondItem="Ig4-Yi-Tkq" secondAttribute="height" id="c56-8h-WjR"/>
+                            <constraint firstItem="X61-Ae-eWe" firstAttribute="centerX" secondItem="Ig4-Yi-Tkq" secondAttribute="centerX" id="dKZ-NW-yKC"/>
+                            <constraint firstAttribute="width" secondItem="tmb-3v-HvW" secondAttribute="width" constant="30" id="eib-mh-e18"/>
+                            <constraint firstItem="tmb-3v-HvW" firstAttribute="height" secondItem="Ig4-Yi-Tkq" secondAttribute="height" id="j4A-PY-0uB"/>
+                            <constraint firstItem="X61-Ae-eWe" firstAttribute="top" secondItem="Ig4-Yi-Tkq" secondAttribute="bottom" constant="15" id="p2v-IG-Jbl"/>
+                            <constraint firstItem="tmb-3v-HvW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="xVp-aC-P6q"/>
+                            <constraint firstAttribute="centerX" secondItem="tmb-3v-HvW" secondAttribute="centerX" id="xcq-nE-KT2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="f0s-WI-75e">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="YIP-Wl-Do8">
+                            <rect key="frame" x="140" y="7" width="305" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Orientation"/>
+                                <segment title="Gyro"/>
+                                <segment title="Accelerometer"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="eJZ-2x-Lsn">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mti-Zn-OXD">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect a Myo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="modalPresentMyoSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QaO-Jg-U9m"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventPicker" destination="YIP-Wl-Do8" id="ppE-rQ-M7D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="217" y="195"/>
         </scene>
     </scenes>
 </document>
