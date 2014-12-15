@@ -11,7 +11,7 @@
 
 #import "JBLineChartView.h"
 
-typedef NS_ENUM(NSInteger, MAYOValueType) {
+typedef NS_ENUM(NSInteger, MYOAxis) {
     MAYOValueTypeX = 0,
     MAYOValueTypeY,
     MAYOValueTypeZ,
@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, MAYOValueType) {
     
 };
 
-typedef NS_ENUM(NSInteger, MAYOEventType) {
+typedef NS_ENUM(NSInteger, MYOEventType) {
     MAYOEventTypeOrientation = 0,
     MAYOEventTypeGyro,
     MAYOEventTypeAccelerometer
@@ -77,13 +77,13 @@ typedef NS_ENUM(NSInteger, MAYOEventType) {
     [super viewDidLoad];
 
     /**
-     *
+     *  Style the view a little bit.
      */
     
     self.navigationController.navigationBar.barTintColor = [UIColor darkGrayColor];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 
-    self.title = @"MyoGraph";
+    self.title = @"MyoChart";
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     
     /**
@@ -92,17 +92,21 @@ typedef NS_ENUM(NSInteger, MAYOEventType) {
     
     NSArray *chartViews = @[self.gyroChartView, self.accelChartView, self.orientationChartView];
     
+    /**
+     *  ...iterate them...
+     */
+    
     for (JBLineChartView *chartView in chartViews) {
         
         /**
-         *  Wire them up.
+         *  ...wire them up...
          */
         
         chartView.dataSource = self;
         chartView.delegate = self;
         
         /**
-         *  Style them up.
+         *  ...and style them.
          */
         
         chartView.layer.cornerRadius = 8.0f;
@@ -131,7 +135,7 @@ typedef NS_ENUM(NSInteger, MAYOEventType) {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceivePoseChange:) name:TLMMyoDidReceiveOrientationEventNotification object:nil];
     
     /**
-     *  Refresg the UI.
+     *  Refresh the UI.
      */
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(refreshUI) userInfo:nil repeats:YES];
@@ -236,7 +240,7 @@ typedef NS_ENUM(NSInteger, MAYOEventType) {
 - (NSUInteger)lineChartView:(JBLineChartView *)lineChartView numberOfVerticalValuesAtLineIndex:(NSUInteger)lineIndex {
     NSArray *dataSetTypes = @[self.orientation, self.gyro, self.accel];
     
-    MAYOEventType type = [self eventTypeForGraph:lineChartView];
+    MYOEventType type = [self eventTypeForGraph:lineChartView];
     
     NSUInteger count = ((NSArray *)dataSetTypes[type]).count;
     
@@ -250,7 +254,7 @@ typedef NS_ENUM(NSInteger, MAYOEventType) {
      *  Choose the correct chart.
      */
     
-    MAYOEventType type = [self eventTypeForGraph:lineChartView];
+    MYOEventType type = [self eventTypeForGraph:lineChartView];
     
     /**
      *  Drill down into the correct chart.
@@ -331,8 +335,8 @@ typedef NS_ENUM(NSInteger, MAYOEventType) {
  *  ---
  */
 
-- (MAYOEventType)eventTypeForGraph:(JBLineChartView *)lineChart {
-    MAYOEventType type = MAYOEventTypeGyro;
+- (MYOEventType)eventTypeForGraph:(JBLineChartView *)lineChart {
+    MYOEventType type = MAYOEventTypeGyro;
     
     if ([lineChart isEqual:self.accelChartView]) {
         type = MAYOEventTypeAccelerometer;
