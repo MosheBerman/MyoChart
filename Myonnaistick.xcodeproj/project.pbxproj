@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4675273D1A3D6D72001BB407 /* MyoGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyoGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4675273D1A3D6D72001BB407 /* Myonnaistick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Myonnaistick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467527411A3D6D72001BB407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		467527421A3D6D72001BB407 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		467527441A3D6D72001BB407 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		467527481A3D6D72001BB407 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4675274B1A3D6D72001BB407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4675274D1A3D6D72001BB407 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		467527561A3D6D72001BB407 /* MyoGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyoGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		467527561A3D6D72001BB407 /* MyonnaistickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyonnaistickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4675275B1A3D6D72001BB407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4675275C1A3D6D72001BB407 /* MyonnaistickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyonnaistickTests.m; sourceTree = "<group>"; };
 		467527671A3D6FF6001BB407 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyoKit.framework; path = Myonnaistick/Myo/MyoKit.framework; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 		4675273E1A3D6D72001BB407 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4675273D1A3D6D72001BB407 /* MyoGraph.app */,
-				467527561A3D6D72001BB407 /* MyoGraphTests.xctest */,
+				4675273D1A3D6D72001BB407 /* Myonnaistick.app */,
+				467527561A3D6D72001BB407 /* MyonnaistickTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4675273C1A3D6D72001BB407 /* MyoGraph */ = {
+		4675273C1A3D6D72001BB407 /* Myonnaistick */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 467527601A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "MyoGraph" */;
+			buildConfigurationList = 467527601A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "Myonnaistick" */;
 			buildPhases = (
 				467527391A3D6D72001BB407 /* Sources */,
 				4675273A1A3D6D72001BB407 /* Frameworks */,
@@ -167,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = MyoGraph;
+			name = Myonnaistick;
 			productName = Myonnaistick;
-			productReference = 4675273D1A3D6D72001BB407 /* MyoGraph.app */;
+			productReference = 4675273D1A3D6D72001BB407 /* Myonnaistick.app */;
 			productType = "com.apple.product-type.application";
 		};
-		467527551A3D6D72001BB407 /* MyoGraphTests */ = {
+		467527551A3D6D72001BB407 /* MyonnaistickTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 467527631A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "MyoGraphTests" */;
+			buildConfigurationList = 467527631A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "MyonnaistickTests" */;
 			buildPhases = (
 				467527521A3D6D72001BB407 /* Sources */,
 				467527531A3D6D72001BB407 /* Frameworks */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				467527581A3D6D72001BB407 /* PBXTargetDependency */,
 			);
-			name = MyoGraphTests;
+			name = MyonnaistickTests;
 			productName = MyonnaistickTests;
-			productReference = 467527561A3D6D72001BB407 /* MyoGraphTests.xctest */;
+			productReference = 467527561A3D6D72001BB407 /* MyonnaistickTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 467527381A3D6D72001BB407 /* Build configuration list for PBXProject "MyoGraph" */;
+			buildConfigurationList = 467527381A3D6D72001BB407 /* Build configuration list for PBXProject "Myonnaistick" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,8 +221,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4675273C1A3D6D72001BB407 /* MyoGraph */,
-				467527551A3D6D72001BB407 /* MyoGraphTests */,
+				4675273C1A3D6D72001BB407 /* Myonnaistick */,
+				467527551A3D6D72001BB407 /* MyonnaistickTests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +289,7 @@
 /* Begin PBXTargetDependency section */
 		467527581A3D6D72001BB407 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4675273C1A3D6D72001BB407 /* MyoGraph */;
+			target = 4675273C1A3D6D72001BB407 /* Myonnaistick */;
 			targetProxy = 467527571A3D6D72001BB407 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,7 +395,7 @@
 				INFOPLIST_FILE = Myonnaistick/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = MyoGraph;
+				PRODUCT_NAME = Myonnaistick;
 			};
 			name = Debug;
 		};
@@ -410,7 +410,7 @@
 				INFOPLIST_FILE = Myonnaistick/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = MyoGraph;
+				PRODUCT_NAME = Myonnaistick;
 			};
 			name = Release;
 		};
@@ -428,7 +428,7 @@
 				);
 				INFOPLIST_FILE = MyonnaistickTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = MyoGraphTests;
+				PRODUCT_NAME = MyonnaistickTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Myonnaistick.app/Myonnaistick";
 			};
 			name = Debug;
@@ -443,7 +443,7 @@
 				);
 				INFOPLIST_FILE = MyonnaistickTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = MyoGraphTests;
+				PRODUCT_NAME = MyonnaistickTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Myonnaistick.app/Myonnaistick";
 			};
 			name = Release;
@@ -451,7 +451,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		467527381A3D6D72001BB407 /* Build configuration list for PBXProject "MyoGraph" */ = {
+		467527381A3D6D72001BB407 /* Build configuration list for PBXProject "Myonnaistick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4675275E1A3D6D72001BB407 /* Debug */,
@@ -460,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		467527601A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "MyoGraph" */ = {
+		467527601A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "Myonnaistick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				467527611A3D6D72001BB407 /* Debug */,
@@ -469,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		467527631A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "MyoGraphTests" */ = {
+		467527631A3D6D72001BB407 /* Build configuration list for PBXNativeTarget "MyonnaistickTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				467527641A3D6D72001BB407 /* Debug */,

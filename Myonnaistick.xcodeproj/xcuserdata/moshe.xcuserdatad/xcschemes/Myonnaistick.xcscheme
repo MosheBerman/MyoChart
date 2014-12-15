@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4675273C1A3D6D72001BB407"
-               BuildableName = "MyoGraph.app"
-               BlueprintName = "MyoGraph"
-               ReferencedContainer = "container:MyoGraph.xcodeproj">
+               BuildableName = "Myonnaistick.app"
+               BlueprintName = "Myonnaistick"
+               ReferencedContainer = "container:Myonnaistick.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "467527551A3D6D72001BB407"
-               BuildableName = "MyoGraphTests.xctest"
-               BlueprintName = "MyoGraphTests"
-               ReferencedContainer = "container:MyoGraph.xcodeproj">
+               BuildableName = "MyonnaistickTests.xctest"
+               BlueprintName = "MyonnaistickTests"
+               ReferencedContainer = "container:Myonnaistick.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "467527551A3D6D72001BB407"
-               BuildableName = "MyoGraphTests.xctest"
-               BlueprintName = "MyoGraphTests"
-               ReferencedContainer = "container:MyoGraph.xcodeproj">
+               BuildableName = "MyonnaistickTests.xctest"
+               BlueprintName = "MyonnaistickTests"
+               ReferencedContainer = "container:Myonnaistick.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4675273C1A3D6D72001BB407"
-            BuildableName = "MyoGraph.app"
-            BlueprintName = "MyoGraph"
-            ReferencedContainer = "container:MyoGraph.xcodeproj">
+            BuildableName = "Myonnaistick.app"
+            BlueprintName = "Myonnaistick"
+            ReferencedContainer = "container:Myonnaistick.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4675273C1A3D6D72001BB407"
-            BuildableName = "MyoGraph.app"
-            BlueprintName = "MyoGraph"
-            ReferencedContainer = "container:MyoGraph.xcodeproj">
+            BuildableName = "Myonnaistick.app"
+            BlueprintName = "Myonnaistick"
+            ReferencedContainer = "container:Myonnaistick.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4675273C1A3D6D72001BB407"
-            BuildableName = "MyoGraph.app"
-            BlueprintName = "MyoGraph"
-            ReferencedContainer = "container:MyoGraph.xcodeproj">
+            BuildableName = "Myonnaistick.app"
+            BlueprintName = "Myonnaistick"
+            ReferencedContainer = "container:Myonnaistick.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
