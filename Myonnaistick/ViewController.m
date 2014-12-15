@@ -88,11 +88,11 @@ typedef NS_ENUM(NSInteger, MYOAxis) {
      *  Style the view a little bit.
      */
     
-    self.navigationController.navigationBar.barTintColor = [UIColor darkGrayColor];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.27 green:0.69 blue:0.84 alpha:1.00];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.12 green:0.14 blue:0.17 alpha:1.00];
 
     self.title = @"MyoChart";
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : self.navigationController.navigationBar.tintColor};
     
     /**
      *  Grab all the chart views...
