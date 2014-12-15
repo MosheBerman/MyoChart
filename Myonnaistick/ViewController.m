@@ -11,18 +11,25 @@
 
 #import "JBLineChartView.h"
 
-typedef NS_ENUM(NSInteger, MYOAxis) {
-    MAYOValueTypeX = 0,
-    MAYOValueTypeY,
-    MAYOValueTypeZ,
-    MAYOValueTypeW
-    
-};
+/**
+ *  The event types distinguish the sensors.
+ */
 
 typedef NS_ENUM(NSInteger, MYOEventType) {
     MAYOEventTypeOrientation = 0,
     MAYOEventTypeGyro,
     MAYOEventTypeAccelerometer
+};
+
+/**
+ *  The axes from the various sensors.
+ */
+
+typedef NS_ENUM(NSInteger, MYOAxis) {
+    MAYOValueTypeX = 0,
+    MAYOValueTypeY,
+    MAYOValueTypeZ,
+    MAYOValueTypeW
 };
 
 #define kMaxDataPoints 50
@@ -48,12 +55,6 @@ typedef NS_ENUM(NSInteger, MYOEventType) {
  */
 
 @property (weak, nonatomic) IBOutletCollection(UILabel) NSArray *graphNames;
-
-/**
- *
- */
-
-@property (weak, nonatomic) IBOutlet UISegmentedControl *eventPicker;
 
 /**
  *  Store the data somewhere.
