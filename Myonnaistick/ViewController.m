@@ -32,6 +32,13 @@ typedef NS_ENUM(NSInteger, MYOAxis) {
     MAYOValueTypeW
 };
 
+/**
+ *  An arbitrary number of data points. 
+ *
+ *  Useful because too many data points may hinder performance.
+ *
+ */
+
 #define kMaxDataPoints 50
 
 @interface ViewController () <JBLineChartViewDataSource, JBLineChartViewDelegate>
